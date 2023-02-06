@@ -16,7 +16,8 @@
     "new-version": "lerna version --no-git-tag-version --exact",
     "pre-publish": "npm run lint; npm run typecheck; npm run prettier; npm run build; npm run new-version",
     "npm-publish:latest": "lerna exec -- npm publish --no-private --access public --tag latest",
-    "npm-publish:canary": "lerna exec -- npm publish --no-private --access public --tag canary"
+    "npm-publish:canary": "lerna exec -- npm publish --no-private --access public --tag canary",
+    "start": "npm run dev & npm run dev:react"
   },
   "workspaces": [
     "chains/ethereum",
